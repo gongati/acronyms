@@ -29,11 +29,11 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kCA-9M-vWq">
-                                <rect key="frame" x="92" y="194" width="190" height="30"/>
+                                <rect key="frame" x="92" y="198" width="190" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Fetch Acronym"/>
                                 <connections>
-                                    <segue destination="01R-Km-trW" kind="show" identifier="show details" id="uUN-uE-397"/>
+                                    <action selector="fetchDetails:" destination="dkx-z0-nzr" eventType="touchUpInside" id="dib-r7-r8S"/>
                                 </connections>
                             </button>
                         </subviews>
