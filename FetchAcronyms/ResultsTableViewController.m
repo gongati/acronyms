@@ -40,8 +40,11 @@
         
         NSArray* responseArray = [NSArray arrayWithArray:responseObject];
         NSArray* longformsArray;
+        
+        //Its possible to get an empty array or nil value
+        //So, don't try to request the Array for the firstObject
         if (responseArray.count > 0) {
-           longformsArray = [NSArray arrayWithArray:[[responseArray objectAtIndex:0] valueForKey:@"lfs"]];
+           longformsArray = [NSArray arrayWithArray:[[responseArray firstObject] valueForKey:@"lfs"]];
         }else{
             longformsArray = [NSArray array];
         }
